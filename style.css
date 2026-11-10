@@ -255,6 +255,31 @@ section.alt { background: var(--bg-soft); }
   font-size: 0.86rem;
   font-weight: 500;
   color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+a.school-chip:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(37, 71, 192, 0.1);
+  color: var(--accent);
+}
+
+.school-chip--invited {
+  border-style: dashed;
+}
+
+.invited-badge {
+  display: inline-block;
+  margin-left: 6px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 999px;
+  vertical-align: middle;
+  letter-spacing: 0.02em;
 }
 
 /* ---------- Page head ---------- */
